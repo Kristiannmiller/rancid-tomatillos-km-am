@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- node
+notifications:
+  email: false
+deploy:
+  provider: heroku
+  api_key:
+    secure: rzB8yZR86Ig8psff1H5eCn1+Lmrsf+gKyhU+gvyen6CAemUS8f159Mwg6f7gxenZpq+MhpMNQabTwfLhJuiPLmCtLAIHUlPxL09qSu1eZi+kIAngmRiAg/QpDF9whx1Fv0KpHjCPQsOt4lp/4BxOM30l4aGHmMszTwW3BESie/9UNn1ZTpwp1fFzboZ6rXDO+XB2kd2QMsFEcQ8s0rukwh0m7qe+uiIEDvsTIy0m9wiU87vSJktkKU78Xz5fzWK6OJKN078Nle0F/f1vsXhllzsxkb2lwiBk/NkXMs85xTBVXid8MeNpGvboeCmBhc8LrajwszzbtEgdHnoYwyE0VsubSaRm5Mps1i/6id5EB+PomKz3xTr9d0o9UrQD2EmBoJufEM5bcn0prjFW4X0IZTTyAOBZ95waM4WfDDp/LFK61Le1W8bupMoXycZi7cbdKx/xy88/87IHRxcLnA6oh4/rOcFJc3mgXnUj5CqUkSAWJEzeGvNKLO1E9WY7wOdLb2Y5DAcLJKSHj8UzW4pZSWxnthY59QTEyHtzFSj51+qIpttLBPKzjJTe0BUa1Sz8DKGSWWjNYDpC+DWBVOnzAZcXjQiVkA6b7V50wciaIvpmjheKXy0+jJPDTZSlUntbT3JaIY4iB6RVXtwyf1a2Z5Ai90croo9AF2HfxsGgRRQ=
+  app: rancid-tomatillos-km-am
+  skip_cleanup: true
