@@ -42,7 +42,6 @@ In your terminal:
 ## Where it began
 <img src="src/wireframe.png" alt="early wireframe design of Rancid Tomatillos site" width="600">
 
-
 ## Usage
 #### LOG-IN VIEW
 <img src="src/LoginPage.png" alt="Rancid Tomatillos app log-in view" width="600">
