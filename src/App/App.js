@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter, Route, Switch, Link } from 'react-router-dom';
+import { withRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 import MovieGrid from '../MovieGrid/MovieGrid.js';
 import MovieView from '../MovieView/MovieView.js';
 import ApiCalls from '../ApiCalls.js';
@@ -46,7 +46,11 @@ export class App extends Component {
   render() {
     return (
       <main className='App'>
-      <img className='logo' src={logo} alt='Rancid Tomatillo Logo'/>
+      <Route>
+        <NavLink id="homeNav" className="homeNav" to="/">
+          <img className='logo' src={logo} alt='Rancid Tomatillo Logo'/>
+        </NavLink>
+      </Route>
       <header className='header'>
         {!this.state.user.id && this.state.isOnHomePage &&
         <Link className="loginLogout" to={'/login'} onClick={() => this.loginButtonFunction()}>Login
