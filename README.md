@@ -39,6 +39,9 @@ In your terminal:
 4. Enter user email- `olivia@turing.io`
 5. Enter password- `pword`
 
+## Where it began
+<img src="src/wireframe.png" alt="early wireframe design of Rancid Tomatillos site" width="600">
+
 
 ## Usage
 #### LOG-IN VIEW
