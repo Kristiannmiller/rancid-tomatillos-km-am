@@ -9,6 +9,9 @@ jest.mock('../ApiCalls.js');
 
 
 describe('App', () => {
+  it.only('Should work', () => {
+    expect(true).toEqual(true)
+  })
   it('Should log out a user when the logout button is clicked', async () => {
     const history = createMemoryHistory();
 

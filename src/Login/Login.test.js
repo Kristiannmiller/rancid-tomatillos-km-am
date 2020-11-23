@@ -11,7 +11,7 @@ jest.mock('../ApiCalls.js');
 
 describe('Login', () => {
 
-  it('should render a login form', () => {
+  it.only('should render a login form', () => {
     render(<Login />)
     expect(screen.getByPlaceholderText('Password')).toBeInTheDocument()
     expect(screen.getByPlaceholderText('Email')).toBeInTheDocument()
