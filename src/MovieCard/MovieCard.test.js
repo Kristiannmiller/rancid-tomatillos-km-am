@@ -9,7 +9,7 @@ import MovieGrid from '../MovieGrid/MovieGrid.js';
 jest.mock('../ApiCalls.js');
 
 describe('MovieCard', () => {
-  it('should render a movie card', () => {
+  it.only('should render a movie card', () => {
     const testMovie = {id: 1, title: 'Titanic', average_rating: 3.0, release_date: '2020-09-29' }
     render(
       <BrowserRouter>
@@ -77,7 +77,7 @@ describe('MovieCard', () => {
 
      const rating = await waitFor(() => screen.getByText('Click to add rating'));
      expect(rating).toBeInTheDocument();
-   }) 
+   })
 
    it('should prompt user to sign in to add a rating', async () => {
      ApiCalls.getAllMovies.mockResolvedValue(

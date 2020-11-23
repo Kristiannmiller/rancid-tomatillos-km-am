@@ -9,6 +9,17 @@ jest.mock('../ApiCalls.js');
 
 
 describe('App', () => {
+  it.only('Should render a header and a logo', () => {
+    render(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    )
+    const logo = screen.getByAltText('Rancid Tomatillo Logo')
+    const header = screen.getByTestId('header')
+    expect(logo).toBeInTheDocument()
+    expect(header).toBeInTheDocument()
+  })
   it('Should log out a user when the logout button is clicked', async () => {
     const history = createMemoryHistory();
 

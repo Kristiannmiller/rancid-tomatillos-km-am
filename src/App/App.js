@@ -47,7 +47,7 @@ export class App extends Component {
     return (
       <main className='App'>
       <img className='logo' src={logo} alt='Rancid Tomatillo Logo'/>
-      <header className='header'>
+      <header data-testid='header' className='header'>
         {!this.state.user.id && this.state.isOnHomePage &&
         <Link className="loginLogout" to={'/login'} onClick={() => this.loginButtonFunction()}>Login
         </Link> }
